@@ -1,0 +1,30 @@
+
+/* styles.css — сучасна кольорова тема (без зовнішніх шрифтів) */
+:root{
+  --bg:#0f1724; --card:#0b1220; --accent:#ff6b6b; --accent2:#6be7ff; --muted:#9aa4b2; --text:#e6eef6;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,var(--bg), #071422); color:var(--text); -webkit-font-smoothing:antialiased;}
+.site-header{background:rgba(255,255,255,0.02);backdrop-filter:blur(6px); position:sticky; top:0; z-index:10; border-bottom:1px solid rgba(255,255,255,0.03);}
+.nav{display:flex; align-items:center; justify-content:space-between; max-width:1000px; margin:0 auto; padding:14px;}
+.logo{font-weight:700; color:var(--accent); text-decoration:none; font-size:1.1rem;}
+.nav-links a{margin-left:18px; color:var(--text); text-decoration:none; padding:8px 12px; border-radius:8px;}
+.nav-links a:hover{background:rgba(255,255,255,0.03); color:var(--accent2);}
+
+.container{max-width:1000px; margin:28px auto; padding:20px;}
+.hero{display:flex; align-items:center; justify-content:space-between; gap:20px; background:linear-gradient(90deg, rgba(255,107,107,0.08), rgba(107,231,255,0.04)); padding:18px; border-radius:12px; border:1px solid rgba(255,255,255,0.03);}
+.hero h1{margin:0; font-size:1.6rem; color:var(--accent);}
+.contact a{color:var(--text); text-decoration:underline;}
+
+.card{background:var(--card); padding:16px; border-radius:10px; margin-top:18px; box-shadow:0 6px 18px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.02);}
+.card h2{margin-top:0; color:var(--accent2);}
+
+.data-table{width:100%; border-collapse:collapse; margin-top:12px; background:rgba(255,255,255,0.02);}
+.data-table th, .data-table td{padding:10px; border-bottom:1px solid rgba(255,255,255,0.03); text-align:left; font-size:0.95rem;}
+.data-table thead th{color:var(--accent);}
+
+.threats li, .measures li{margin:8px 0; line-height:1.5;}
+
+.footer{margin-top:22px; padding:12px; color:var(--muted); font-size:0.9rem;}
+a{color:var(--accent2);}
+@media (max-width:700px){.hero{flex-direction:column; align-items:flex-start;} .nav-links{display:flex; gap:8px; flex-wrap:wrap;}}
